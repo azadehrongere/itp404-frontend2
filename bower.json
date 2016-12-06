@@ -2,6 +2,8 @@
   "name": "itp404final",
   "dependencies": {
     "ember": "~2.10.0",
-    "ember-cli-shims": "0.1.3"
+    "ember-cli-shims": "0.1.3",
+    "firebase": "^3.0.0",
+    "slick-carousel": "1.5.8"
   }
 }

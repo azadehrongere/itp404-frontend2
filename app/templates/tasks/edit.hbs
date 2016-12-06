@@ -1,0 +1,23 @@
+<form>
+  <div class="form-group">
+    <label>Event Type</label>
+    {{input type="text" class="form-control" value=model.type placeholder="Who is this event for? Adventure Junkies, History Buffs, Luxurious Globetrotters or Wanna-be Locals"}}
+  </div>
+  <div class="form-group">
+    <label>Event Title</label>
+    {{input type="text" class="form-control" value=model.title placeholder="What's the name of your event?"}}
+  </div>
+  <div class="form-group">
+    <label>Date</label>
+    {{input type="date" class="form-control" value=model.date}} 
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    {{textarea class="form-control" value=model.description placeholder="What's your event about?"}}
+  </div>
+
+
+  <button {{action 'editTask' model.id}} class="btn btn-primary">Submit</button>
+</form>
+ 
+ 

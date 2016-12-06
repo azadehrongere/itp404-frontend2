@@ -4,6 +4,14 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'itp404final',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    // firebase:'https://task-e7742.firebaseio.com/',
+    firebase: {
+    apiKey: 'xyz',
+    authDomain: 'task-e7742.firebaseapp.com',
+    databaseURL: 'https://task-e7742.firebaseio.com/',
+    storageBucket: 'gs://task-e7742.appspot.com',
+  },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
